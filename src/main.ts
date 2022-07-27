@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 
 import { Button, Toast } from 'vant'
+import 'windi.css'
 
 Vue.use(Button).use(Toast)
 

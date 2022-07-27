@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img class="inline-block" alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
     <div>{{ msg }}</div>
     <div>{{ count?.name }} - {{ count.age }}</div>
-    <van-button type="primary" @click="testClick">Primary</van-button>
+    <van-button type="primary" class="rounded-md" @click="testClick">Primary</van-button>
   </div>
 </template>
 
@@ -40,10 +40,4 @@ export default defineComponent({
 })
 </script>
 <style lang="less" scoped>
-.home {
-  /deep/ .van-button--primary {
-    background-color: red;
-    border: 1px solid red;
-  }
-}
 </style>
